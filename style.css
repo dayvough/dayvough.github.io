@@ -1,5 +1,6 @@
 body {
   background-image: linear-gradient(to left top, rgb(76, 221, 255), rgb(59, 154, 202) 10%, rgb(45, 108, 165) 20%, rgb(42, 82, 145) 27%, rgb(40, 61, 129) 35%, rgb(34, 38, 84) 50%, rgb(30, 22, 53) 63%, rgb(12, 0, 16) 93%, rgb(0, 0, 0));
+  margin: 0;
 }
 
 .logo {
@@ -50,16 +51,6 @@ body {
 .logo--letter-o {
   width: 105px;
   animation-delay: 0.5s;
-}
-
-@keyframes dash {
-  from { stroke-dasharray: 0 1000; }
-  to { stroke-dasharray: 1000 0; }
-}
-
-.path {
-  stroke-dasharray: 0 1000;
-  animation: dash 5s linear alternate infinite;
 }
 
 
