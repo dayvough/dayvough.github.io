@@ -1,0 +1,65 @@
+body {
+  background-image: linear-gradient(to left top, rgb(76, 221, 255), rgb(59, 154, 202) 10%, rgb(45, 108, 165) 20%, rgb(42, 82, 145) 27%, rgb(40, 61, 129) 35%, rgb(34, 38, 84) 50%, rgb(30, 22, 53) 63%, rgb(12, 0, 16) 93%, rgb(0, 0, 0));
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.logo--line { display: inline-flex; margin: 15px 0; }
+
+@keyframes fadeIn {
+  0%   { opacity: 0; }
+  25%  { opacity: 0.25; }
+  50%  { opacity: 0.50; }
+  75%  { opacity: 0.75; }
+  100% { opacity: 1; }
+}
+
+.logo--letter {
+  fill: #FFF;
+  width: 100px;
+  max-height: 90px;
+  margin: auto 5px;
+
+  opacity: 0;
+  animation: 0.5s ease-in 0s 1 fadeIn;
+  animation-fill-mode: forwards;
+}
+
+.logo--letter-d {
+  width: 85px;
+  margin: auto 15px auto 0px;
+  animation-delay: 0.125s;
+}
+
+.logo--letter-a {
+  width: 100px;
+  animation-delay: 0.25s;
+}
+
+.logo--letter-v {
+  width: 95px;
+  animation-delay: 0.375s;
+}
+
+.logo--letter-o {
+  width: 105px;
+  animation-delay: 0.5s;
+}
+
+@keyframes dash {
+  from { stroke-dasharray: 0 1000; }
+  to { stroke-dasharray: 1000 0; }
+}
+
+.path {
+  stroke-dasharray: 0 1000;
+  animation: dash 5s linear alternate infinite;
+}
+
+
